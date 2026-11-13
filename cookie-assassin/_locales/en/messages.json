@@ -1,0 +1,92 @@
+{
+  "extName": {
+    "message": "Cookie-Assassin"
+  },
+  "extDescription": {
+    "message": "Dynamic Onion Shield: identity fragmentation, trust tiers, and precise tracking cleanup."
+  },
+  "identityFragmented": {
+    "message": "Fragmented (New Identity)"
+  },
+  "identityFrozen": {
+    "message": "Identity Frozen"
+  },
+  "identityHighTrust": {
+    "message": "High Trust Protected"
+  },
+  "trustLabel": {
+    "message": "Trust Mode"
+  },
+  "trustAuto": {
+    "message": "Smart Auto"
+  },
+  "trustForce": {
+    "message": "Force Fragment"
+  },
+  "trustDomain": {
+    "message": "Trust Domain"
+  },
+  "statBounty": {
+    "message": "Bounty Score"
+  },
+  "statBlocked": {
+    "message": "Total blocked"
+  },
+  "statFreed": {
+    "message": "Space freed"
+  },
+  "btnScan": {
+    "message": "Full Scan"
+  },
+  "scanningHint": {
+    "message": "Analyzing Cookie / LocalStorage / SessionStorage..."
+  },
+  "catPrivacy": {
+    "message": "Privacy Threats"
+  },
+  "catJunk": {
+    "message": "Performance Junk"
+  },
+  "catAssets": {
+    "message": "Behavioral Assets"
+  },
+  "btnClean": {
+    "message": "Reap selected"
+  },
+  "btnRescan": {
+    "message": "Rescan"
+  },
+  "btnBack": {
+    "message": "Back"
+  },
+  "noTrackers": {
+    "message": "No trackers found. Your privacy is clean."
+  },
+  "reaped": {
+    "message": "Reaped $1 item(s). +$2 bounty."
+  },
+  "reapFailed": {
+    "message": "Reap failed: $1"
+  },
+  "scanFailed": {
+    "message": "Scan failed: $1"
+  },
+  "restrictedPage": {
+    "message": "Restricted page"
+  },
+  "typeCookie": {
+    "message": "Cookie"
+  },
+  "typeLocal": {
+    "message": "LocalStorage"
+  },
+  "typeSession": {
+    "message": "SessionStorage"
+  },
+  "warningHttpOnly": {
+    "message": "Warning: $1 item(s) could not be deleted (HttpOnly/read-only). No bounty granted for them."
+  },
+  "warnManualOverride": {
+    "message": "Manual Override: Deleting this might log you out."
+  }
+}

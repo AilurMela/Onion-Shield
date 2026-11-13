@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "6.0.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "cookies",
+    "webNavigation",
+    "declarativeNetRequest",
+    "proxy",
+    "sidePanel"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "action": {
+    "default_title": "__MSG_extName__",
+    "default_popup": "src/popup/popup.html"
+  },
+  "side_panel": {
+    "default_path": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/inject-fp.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookie-Assassin</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">◈</span>
+      <div>
+        <h1 id="brand-name" data-i18n="extName"></h1>
+        <p id="domain-label" class="domain">—</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Identity status -->
+  <section class="identity-card" id="identity-card">
+    <span id="identity-status" class="identity-status">—</span>
+  </section>
+
+  <!-- Dashboard -->
+  <section class="dashboard">
+    <div class="stat-card">
+      <span class="stat-label" data-i18n="statBounty"></span>
+      <span id="stat-bounty" class="stat-value">0</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label" data-i18n="statBlocked"></span>
+      <span id="stat-blocked" class="stat-value">0</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label" data-i18n="statFreed"></span>
+      <span id="stat-freed" class="stat-value">0</span>
+    </div>
+  </section>
+
+  <!-- Trust override -->
+  <section class="trust-row">
+    <label for="trust-select" data-i18n="trustLabel"></label>
+    <select id="trust-select">
+      <option value="auto" data-i18n="trustAuto"></option>
+      <option value="force" data-i18n="trustForce"></option>
+      <option value="trust" data-i18n="trustDomain"></option>
+    </select>
+  </section>
+
+  <main>
+    <!-- State 1: initial -->
+    <section id="state-initial" class="state">
+      <button id="btn-scan" class="btn btn-primary" data-i18n="btnScan"></button>
+    </section>
+
+    <!-- State 2: scanning -->
+    <section id="state-scanning" class="state" hidden>
+      <div class="spinner" aria-hidden="true"></div>
+      <p class="hint" data-i18n="scanningHint"></p>
+    </section>
+
+    <!-- State 3: results -->
+    <section id="state-result" class="state" hidden>
+      <div id="accordion" class="accordion"></div>
+      <div class="actions">
+        <button id="btn-clean" class="btn btn-danger" data-i18n="btnClean"></button>
+        <button id="btn-back-result" class="btn btn-ghost" data-i18n="btnRescan"></button>
+      </div>
+    </section>
+
+    <!-- State 4: done -->
+    <section id="state-done" class="state" hidden>
+      <p id="done-text" class="done-text"></p>
+      <button id="btn-back-done" class="btn btn-ghost" data-i18n="btnBack"></button>
+    </section>
+  </main>
+
+  <!-- Shared classifier + popup logic. -->
+  <script src="../content/injector.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

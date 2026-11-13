@@ -1,0 +1,92 @@
+{
+  "extName": {
+    "message": "Cookie-Assassin"
+  },
+  "extDescription": {
+    "message": "动态洋葱护盾：身份碎片化、信任分层与精准追踪清理。"
+  },
+  "identityFragmented": {
+    "message": "碎片化（新身份）"
+  },
+  "identityFrozen": {
+    "message": "身份已冻结"
+  },
+  "identityHighTrust": {
+    "message": "高信任保护中"
+  },
+  "trustLabel": {
+    "message": "信任模式"
+  },
+  "trustAuto": {
+    "message": "智能自动"
+  },
+  "trustForce": {
+    "message": "强制碎片化"
+  },
+  "trustDomain": {
+    "message": "信任该域名"
+  },
+  "statBounty": {
+    "message": "赏金积分"
+  },
+  "statBlocked": {
+    "message": "累计拦截"
+  },
+  "statFreed": {
+    "message": "释放空间"
+  },
+  "btnScan": {
+    "message": "全面扫描"
+  },
+  "scanningHint": {
+    "message": "正在分析 Cookie / LocalStorage / SessionStorage…"
+  },
+  "catPrivacy": {
+    "message": "隐私威胁"
+  },
+  "catJunk": {
+    "message": "性能垃圾"
+  },
+  "catAssets": {
+    "message": "行为资产"
+  },
+  "btnClean": {
+    "message": "收割选中项"
+  },
+  "btnRescan": {
+    "message": "重新扫描"
+  },
+  "btnBack": {
+    "message": "返回"
+  },
+  "noTrackers": {
+    "message": "未发现追踪器，你的隐私很干净。"
+  },
+  "reaped": {
+    "message": "已收割 $1 项，获得 +$2 赏金。"
+  },
+  "reapFailed": {
+    "message": "收割失败：$1"
+  },
+  "scanFailed": {
+    "message": "扫描失败：$1"
+  },
+  "restrictedPage": {
+    "message": "受限页面"
+  },
+  "typeCookie": {
+    "message": "Cookie"
+  },
+  "typeLocal": {
+    "message": "本地存储"
+  },
+  "typeSession": {
+    "message": "会话存储"
+  },
+  "warningHttpOnly": {
+    "message": "警告：$1 项无法删除（HttpOnly/只读），未授予赏金。"
+  },
+  "warnManualOverride": {
+    "message": "手动覆盖：删除此项可能会导致你退出登录。"
+  }
+}
